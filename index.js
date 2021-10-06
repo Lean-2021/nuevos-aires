@@ -54,6 +54,11 @@ const linkContacto=()=>{
     document.getElementById('linkContacto').className="nav-link activo";
 };
 
-
+ // jQuery - Cerrar Menu Nav al hacer click versión Mobil
+ $(document).ready(function(){
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    });
+});
 
 
